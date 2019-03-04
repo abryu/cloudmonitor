@@ -6,7 +6,6 @@ script: mvn clean package
 before_deploy:
   - pwd
   - ls
-  - ls target
 deploy:
   provider: releases
   skip_cleanup: true
