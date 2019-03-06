@@ -4,15 +4,12 @@ jdk:
 install: true
 script: mvn clean package
 before_deploy:
-  - pwd
-  - ls
+- pwd
+- ls
 deploy:
   provider: releases
-  skip_cleanup: true
   api_key:
-    secure: CCsYvQcYXBPTBXKVEwR/hBHBAykhHQrXWMzsUmaaTpS8fqBxlAU24En7DkFvVFozkPx5it85rBg8PJ5w4Btx0EUOBfJj4Z5+lQYuePDh7Ox5dzOh+hN47G4Vd4xwsVAwMyzoeWS187AiH919iy7LqV/tOCbnMC90ukb9W4lk9w1KIAGGRKcvPuS1j1k6bln+qL/48s8OrIGT4MddSBrhCf/stt70bX3UoUY/t3T2fANrTeQUSYVeAAHS2MgXK2DVMi90D+ksNxnCXpNfsji0UMk4cJmKBFO3Ddl+/+64wMt/2AJ46LJ6kbadwAXH3fdlEv6AO8nX2LonVPrbpuTB6YR1kAgQxVPNvDTaaeXzXucNS96S0Ujrq4TeodlV4XZsk61fOs5+G38HMuZVOmXfeSpTb+dusuiPWJ74tKjBOtp/OIN267Nm4LlLn3tvJK828yIQflNz217Ayz2n3NTxJWWbn5+wIr9Modpbiw/XN/U5XvJy+yCoPEkK2kpp6omoyVEos6jKEzvbvrBQNxXY8ORwED9316MYF1xe2ImbIbQcCA0Z5QwAju4+Odlc7jWLbM/px6SCC0uHOKEZmjLCm8gK76VnjLbtET5gv/iF3qjLtt6UAa6CrUDsZmGv5AK2KQhckCMMcSg3FRTvIq/Z1ChUP0v7fKZwoP0qVdSgofw=
-  file: target/cloudmonitor-0.0.1-SNAPSHOT.jar
+    secure: Ab/e4xFnELQG6/3C/s8b1MtRj+SMJcGnROZZqCsHhcfItGmLclYJ4GQn3HtLKd7PeGAer22SkVjriWQgZ9lFS5ycWaG1M2nAb4Hiyar7Vdhc4b48B007/adLS0BV3gbITdMshZpdjemwjasMt5UJbmhvZsZEEo6YoLQxcyed/VVUdYaY99ZxJkeaos4NqVQ5DANg3gSBQ7denRcBCLiJFJtYjAMxrWB8Ha1GOZ+HooUb+NiiRF6U5yF5TuG+oq1uFcvV/m7iu7gTGzyt6G1UxOcG+8s6l4qnGXtmZnvwAAj1LgNIkgBnv5ZuQedqSNc3VNM0GM0Fv8hDbCx0niMHuDh448UmZ+9+4aYkByeyr3QvZQFymmXlNzY368MN/nXQJd+LQLy7P+4qW4Hh7pHzoA2kCRRh24gOKjd5k9OBuBI27DBd05PGuE6D1RFkdDatDfRHLtbeD2QGEUZfsoNGarW0aBpTJS9lSPvl5ZWrtbkYx3HiHldWJLiARhwZ0WcreUoJ4LcFkFtsVyy5d301S6zMKQ6bviGAn6HsqKaMgOQap36viMmKLh1P71J96o0Vqe+h1pHnrJscZU3bbPP2/cEyg7jJR83KUI3vN5tjQVdAqCSwvXEj110dquXIoqkDRaa6AJlcQeIL0YdiQJoNgRwcOeSOabhOxniEfW54zQI=
+  file: target/cloudmonitor-0.0.1.SNAPSHOT.jar
   on:
     repo: abryu/cloudmonitor
-    tags: true
-    all_branches: true
